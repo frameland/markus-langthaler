@@ -1,0 +1,30 @@
+<div class="loaded-content">
+	<img src="img/frameland/editor.png" alt="">
+	<p>
+		The Map-Editor allows the easy creation and modification of Maps, NPCs and Events (e.g. cutscenes).<br>
+		It's not an external Application but runs inside the game. This allows for rapid iteration by immediately being able to test your changes.
+	</p>
+	<p><br>
+		<b>Autotiles</b> was one of the more timesaving features I implemented:<br>
+		<img src="img/frameland/autotiles1.gif" style="display:block;" alt="">
+		Tilemaps are internally represented as an array of numbers.<br>
+		Each Tile has an Index that is associated with it. -1 represents an Empty Tile.<br>
+		In this example I have a palette of 16 different Tiles per Autotile (grass and water).<br>
+		By checking the neighbouring Tiles, I can calculate which Tile is the best fit.<br>
+		This technique makes heavy use of bitwise logic to determine the best Tile.<br>
+		(an improved version of this technique is used in the current version)
+	</p>
+
+	<br>
+	<p>
+		There is also a built in <b>Script-Editor</b>.<br>
+		<img src="img/frameland/script_edit.png" style="display:block;" alt="">
+		Once you make changes it reloads the Script without the need to reload the whole map.
+		<br>I also built in snippets, which are common code blocks that get inserted into the script.
+		<br>The snippets are saved in an external file and can be extended with any Text-Editor.
+		<br>The editor supports simple command completion. Everything that has been defined as an API function,
+		<br>will be available in a dropdown.
+		<br>Additionally each API function displays it's expected parameters (on top near the close button).
+		<br>This is accomplished with an automated command line tool.
+	</p>
+</div>

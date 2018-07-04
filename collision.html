@@ -1,0 +1,14 @@
+<div class="loaded-content">
+	<img src="img/frameland/col1.gif" alt="" style="display:inline-block;width:48%;">
+	<p style="display:inline-block;width:48%;padding:0px 10px;vertical-align:top;">
+		The Collision System uses a single layer for both static and dynamic objects.
+		It simply checks if a tile is either blocked or occupied by a character.
+	</p>
+	<img src="img/frameland/col2.gif" alt="" style="display:inline-block;width:48%;">
+	<p style="display:inline-block;width:48%;padding:0px 10px;vertical-align:top;">
+		Additionally it supports blocking only certain directions. This is useful for different heights or bridges.
+		A collision tile can be any combination of left,right,up and down.<br>
+		All of this is encoded as a single number by using bitwise combination. When a character steps onto a tile that is partly blocked, it remembers the tile.
+		When leaving the tile, it is set back to the remembered state.
+	</p>
+</div>

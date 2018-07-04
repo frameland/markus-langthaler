@@ -1,0 +1,30 @@
+<div class="loaded-content">
+	<video src="img/frameland/pt1.mp4" autoplay loop style="display:inline-block;width:49%;"></video>
+	<video src="img/frameland/pt2.mp4" autoplay loop style="display:inline-block;width:49%;"></video>
+	<!-- <img src="img/frameland/pt_fire.gif" alt="" style="display:inline-block;"> -->
+	<p style="display:inline-block;padding:0px 10px;vertical-align:top;">
+		Supports Points, Lines, Triangles and Textured Quads.<br>
+		Instead of the usual implementation with a single particle class that is inside an array, the data-oriented approach works the other way around.
+		You have one array per particle property, such as <span style="color:#ccc;font-family:monospace;">vec2 position[MAX_PARTICLES]</span> and <span style="color:#ccc;font-family:monospace;">float time[MAX_PARTICLES]</span>.
+	</p>
+	<br><br>This has several advantages:
+	<ul style="list-style-type:circle;list-style-position:inside;">
+		<li>Easy submitting to the GPU, as the data is already in the right format</li>
+		<li>Data and behaviour are decoupled. This makes combining multiple behaviours together easy.</li>
+		<li>Generally better cache locality (CPU) because data is laid out continously in memory.</li>
+	</ul>
+
+	<br>Each Particle System consists of 4 components:
+	<ul style="list-style-type:circle;list-style-position:inside;">
+		<li><b>Data</b>: position, velocity, acceleration, color, time, alive, ...</li>
+		<li><b>Generators</b>: PosRound, PosArea, Arc, LineFan, Time, DirectionForce, ...</li>
+		<li><b>Updaters</b>: Time, Euler, FadeIn, FadeOut, ColorOverLifetime, Converge, FramesOverLifetime, ...</li>
+		<li><b>Renderer</b>: Point, Line, Triangle, Quad</li>
+	</ul>
+	<p><br>
+		<b>Generators</b> run every time an emitter wants to emit particles.
+		<br>E.g. The generator PosRound will set positions in a circular fashion.
+		<br><b>Updaters</b> will run each frame, e.g. Time will reduce the time property until it reaches 0 (and kills it).
+		<br>The <b>Renderer</b> simply takes the particle Data and draws it to the screen.
+	</p>
+</div>

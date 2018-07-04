@@ -1,0 +1,177 @@
+/* reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* custom */
+html, body {
+	background: #21374F;
+	color: #fff;
+	font-family: Arial;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+a, a:visited {
+	color: #D87953;
+}
+
+a:hover {
+	color: #F7B094;
+}
+
+b {
+    font-weight: bold;
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+h1 small{
+	font-size:1rem;
+	display:block;
+	font-style: oblique;
+}
+
+.desc {
+	margin-top: 1rem;
+}
+
+.container {
+	width: 768px;
+	margin: 0 auto;
+	padding: 10px;
+	margin-top: 2em;
+}
+
+h2 {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	margin-top: 4rem;
+	margin-bottom: 1em;
+	color: #4982B7;
+	border-bottom: 3px solid;
+	border-radius: 3px;
+}
+
+.project {
+	margin-bottom: 3rem;
+}
+
+.project h3 {
+	color: #4982B7;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.project > p {
+	margin-bottom: 1rem;
+}
+
+.project h3 small {
+	display: inline-block;
+    background: #fff;
+    border-radius: 5px;
+    padding: 1px 6px;
+    font-size: 1rem;
+    color: #21374F;
+    margin-left: 6px;
+}
+
+.project img, .project video {
+	display: inline-block;
+}
+
+.what-i-did {
+	list-style-type: disc;
+	list-style-position: inside;
+	margin-left: 2rem;
+	margin-top: 0.5rem;
+	line-height: 1.6em;
+}
+
+.frameland .details {
+	text-align: center;
+	display: block;
+	opacity: 0.5;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	margin-left: -88px;
+}
+
+.loader {
+	border-bottom: 1px solid;
+    border-radius: 3px;
+    padding: 2px 3px;
+    text-decoration: none;
+    position: relative;
+}
+
+.loader.loaded {
+	background: rgba(0,0,0,0.2);
+}
+
+.loader.loaded:after {
+	content: '';
+    display: block;
+    position: absolute;
+    bottom: calc(-1rem - 2px);
+    width: 0px;
+    height: 0;
+    left: 7px;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid rgba(0,0,0,0.2);
+}
+
+.loaded-content {
+	background: rgba(0,0,0,0.2);
+	padding: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	width: 700px;
+	border-radius: 2px;
+}

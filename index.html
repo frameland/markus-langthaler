@@ -1,1 +1,136 @@
-hi
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Portfolio - Markus Langthaler</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<main class="container">
+			<h1>
+				Markus Langthaler
+				<small>Game Programmer/Designer</small>
+			</h1>
+
+			<p class="desc">
+				Hello, I am Markus.<br>
+				I am a game programmer/designer from Vienna, Austria.<br>
+				Currently working on Frameland - A Binary Tale.<br><br>
+				You can contact me here: <a href="mailto:markus.langthaler@gmx.net">markus.langthaler@gmx.net</a><br>
+				Other Links: <a href="https://twitter.com/frameland" target="_blank">Twitter</a> | <a href="https://github.com/frameland" target="_blank">Github</a>
+			</p>
+
+			<h2>Games</h2>
+
+			<div class="project frameland">
+				<h3>Frameland - A Binary Tale <small>PC & Mac</small> <small>WIP</small> </h3>
+				<p>A Roleplaying Game told from two perspectives.</p>
+				<div class="content">
+					<div class="pics">
+						<img src="img/frameland/town.gif" alt="Town">
+						<img src="img/frameland/slums.gif" alt="Slums Town">
+						<img src="img/frameland/battle.gif" style="border:1px solid rgba(0,0,0,0.5)" alt="Battle Attack">
+						<img src="img/frameland/story.gif" style="border:1px solid rgba(0,0,0,0.5)" alt="Story">
+					</div>
+					<span class="details">(click on the orange items for details)</span>
+					<ul class="what-i-did">
+						<li>Programmed a custom 2D-Engine tailored to the needs of a tilebased 2D-RPG.</li>
+						<li>Engine Features: Scenes, Tilemaps, Actions, Input Abstraction, Shaders, <a class="loader" href="gui.html">GUI</a>, ...</li>
+						<li>Created a Turn-Based Battlesystem that requires timed-input for Attacks and Defends.</li>
+						<li>Additionally made Tools to quickly iterate on the game: <a class="loader" href="level-editor.html">Level Editor</a>, Particle Editor & more</li>
+						<li>UI Design + Implementation for all Menus (cursor controlled)</li>
+						<li>An API that can be accessed by the Scripting System (or internally).</li>
+						<li><a class="loader" href="movement.html">Smooth Character Movement</a> (walks on the grid but can switch direction anytime)</li>
+						<li>Implemented RPG specific features: Levelling-System, Inventory, Weapons, Items, ...</li>
+						<li><a class="loader" href="collision.html">Fast Collision Detection</a>: Constant time regardless the amount of objects</li>
+						<li>Created On-Map enemies that implement swarm-like behaviour like seeking and avoiding</li>
+						<li><a class="loader" href="particles.html">Data-Oriented Particle System</a> that can draw up to 100000 particles on my computer (Macbook Pro 2015).</li>
+						<li>Made several smaller minigames</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="project jumpy">
+				<h3>Jumpy Square <small>iOS</small></h3>
+				<p>Dodge blocks by tapping the screen.</p>
+				<div class="content">
+					<div class="pics">
+						<video src="img/jumpy-square/video.mp4" autoplay loop controls poster="img/jumpy-square/poster.png" height="240px"></video>
+						<img src="img/jumpy-square/thumb1.png" alt="">
+						<img src="img/jumpy-square/thumb2.png" alt="">
+						<img src="img/jumpy-square/thumb3.png" alt="">
+					</div>
+					<ul class="what-i-did">
+						<li>Went from idea to publishing on the iOS AppStore in 5 weeks</li>
+						<li>Did all programming and created all assets myself (except for the music)</li>
+						<li>Contains a simple system to support multiple languages (via an XML File)</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="project">
+				<h3>Hoodie Hero <small>iOS</small></h3>
+				<p>The thrill of sliding on ice ... and not falling off a cliff.</p>
+				<div class="pics">
+					<img src="img/hoodie-hero/1.png" alt="">
+					<img src="img/hoodie-hero/2.png" alt="">
+					<img src="img/hoodie-hero/3.png" alt="">
+					<img src="img/hoodie-hero/4.png" alt="">
+				</div>
+				<ul class="what-i-did">
+					<li>Self Published on the iOS and Android AppStores</li>
+					<li>Implemented two different Gameplay Modes: Highscore & Levels</li>
+					<li>Level-Select screen that perfectly mimics iOS swiping behaviour (velocity, rubberbanding, etc.)</li>
+					<li>Implemented a reusable In-App purchases module</li>
+				</ul>
+			</div>
+
+			<h2>Other</h2>
+
+			<div class="project">
+				<h3>Scope2D <small>Mac</small></h3>
+				<p>
+					A Level Editor for Non Tile-Based 2D games.
+					<br><a href="https://github.com/frameland/Scope-2D" target="_blank" style="position:relative;z-index:1;">Github Repo</a>
+				</p>
+				<div class="content">
+					<div class="pics">
+						<img style="margin-left:-57px;margin-top:-32px;"src="img/other/scope2d.png" alt="">
+					</div>
+					<ul class="what-i-did">
+						<li>Exports levels as XML Files</li>
+						<li>Supports common keyboard shortcuts (similar to Autodesk Maya)</li>
+						<li>Uses native OSX functionality (can also go fullscreen)</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="project">
+				<h3>mxloc</h3>
+				<p>
+					A command line utility to count the lines of a Monkey-X project.
+					<br><a href="https://github.com/frameland/mxloc" target="_blank">Github Repo</a>
+				</p>
+			</div>
+
+			<div class="project">
+				<h3>Monkey-X for Atom</h3>
+				<p>
+					Adds Syntax highlighting for the Monkey-X programming language.
+					<br>Additionally adds snippet support for the standard libraries.
+					<br>I also wrote a tool to automate the process of creating snippets.
+					<br><a href="https://atom.io/packages/monkey-x" target="_blank">Package on atom.io</a>
+				</p>
+			</div>
+
+			<p class="desc" style="margin-top:6rem;margin-bottom:4rem;">
+				Email: <a href="mailto:markus.langthaler@gmx.net">markus.langthaler@gmx.net</a><br>
+				Other Links: <a href="https://twitter.com/frameland" target="_blank">Twitter</a> | <a href="https://github.com/frameland" target="_blank">Github</a>
+			</p>
+
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
